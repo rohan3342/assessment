@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import {
   care, consultation, medicine, microscope, packageIcon,
   stethoscope, wellness, zoy
@@ -31,7 +31,7 @@ const BottomCompData = [
   },
   {
     title: 'Ask Zoy',
-    image: consultation
+    image: zoy
   },
   {
     title: 'Home Healthcare',
@@ -55,7 +55,14 @@ export default class CategoryService extends Component {
             )
           }
         </View>
-        <BottomComp />
+        <View style={styles.BottomCompWrapper}>
+          {
+            BottomCompData.map((data, index) => <BottomComp imgTitle={data.title}
+              imgSrc={data.image}
+              key={index} />
+            )
+          }
+        </View>
       </View>
     );
   }
@@ -63,35 +70,44 @@ export default class CategoryService extends Component {
 
 const TopComp = ({ imgSrc, imgTitle, imgKey }) => {
   return (
-    <View key={imgKey} style={styles.TopCompContainer}>
+    <TouchableOpacity key={imgKey} style={styles.TopCompContainer}>
       <Image source={imgSrc} style={styles.TopCompImage} />
       <Text style={styles.TopCompText} >{imgTitle}</Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 
 const BottomComp = ({ imgSrc, imgTitle, imgKey }) => {
   return (
-    <View key={imgKey} style={styles.BottomCompContainer}>
-      <Image source={imgSrc} />
-      <Text>{imgTitle}</Text>
-    </View>
+    <TouchableOpacity key={imgKey} style={styles.BottomCompContainer}>
+      <View style={styles.BottomCompImageWrapper}>
+        <Image source={imgSrc} style={styles.BottomCompImage} />
+      </View>
+      <View style={styles.BottomCompTextWrapper}>
+        <Text style={styles.BottomCompText} >{imgTitle}</Text>
+      </View>
+    </TouchableOpacity>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
   TopCompWrapper: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
+    marginHorizontal: '2%',
+    marginVertical: '3%',
   },
   TopCompContainer: {
     width: 120,
-    height: 130,
+    height: 120,
+    borderRadius: 10,
     backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
     ...Platform.select({
       ios: {
         shadowColor: 'black',
@@ -103,8 +119,7 @@ const styles = StyleSheet.create({
         elevation: 5,
       },
     }),
-    justifyContent: 'center',
-    alignItems: 'center',
+
   },
   TopCompImage: {
     height: 35,
@@ -115,8 +130,42 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center'
   },
+  BottomCompWrapper: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    paddingHorizontal: 20,
+  },
   BottomCompContainer: {
-
+    width: 100,
+    height: 120,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  BottomCompImageWrapper: {
+    borderWidth: 1,
+    borderRadius: 50,
+    borderColor: '#ddd',
+    padding: 8,
+    position: 'absolute',
+    top: 20,
+  },
+  BottomCompImage: {
+    width: 30,
+    height: 30,
+  },
+  BottomCompTextWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: 70,
+  },
+  BottomCompText: {
+    width: 80,
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'grey'
   }
 })
 
