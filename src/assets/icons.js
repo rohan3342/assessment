@@ -27,6 +27,13 @@ import zoy from './icons/category-icons/zoy.png';
 // Diagnostic Icon
 import mobile from './icons/diagnostic-icons/mobile.png'
 
+
+// Medicines Icon
+import ayurveda from './icons/medicines-icons/ayurveda.png';
+import healthcare from './icons/medicines-icons/healthcare.png';
+import homeopathy from './icons/medicines-icons/homeopathy.png';
+import surgical from './icons/medicines-icons/surgical.png';
+
 export {
   bellActive, bellInActive,
   call,
@@ -36,5 +43,5 @@ export {
   cart, mapMarker,
   care, consultation, medicine, microscope, packageIcon,
   stethoscope, wellness, zoy,
-  mobile,
+  mobile, ayurveda, healthcare, homeopathy, surgical,
 }

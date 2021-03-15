@@ -4,6 +4,8 @@ import OffersSection from '../components/OffersSection';
 import HomeHeader from '../components/HomeHeader';
 import CategoryService from '../components/CategoryService';
 import DiagnosticScreen from './DiagnosticScreen';
+import MedicinesCategories from './MedicinesCategories';
+
 class Home extends Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class Home extends Component {
           <OffersSection />
           <CategoryService />
           <DiagnosticScreen />
+          <MedicinesCategories />
         </ScrollView>
       </SafeAreaView>
     );
