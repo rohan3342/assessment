@@ -5,6 +5,7 @@ import HomeHeader from '../components/HomeHeader';
 import CategoryService from '../components/CategoryService';
 import DiagnosticScreen from './DiagnosticScreen';
 import MedicinesCategories from './MedicinesCategories';
+import LongCard from '../components/LongCard';
 
 class Home extends Component {
   render() {
@@ -16,6 +17,7 @@ class Home extends Component {
           <CategoryService />
           <DiagnosticScreen />
           <MedicinesCategories />
+          <LongCard />
         </ScrollView>
       </SafeAreaView>
     );

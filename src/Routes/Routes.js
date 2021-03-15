@@ -15,19 +15,22 @@ import {
 const Tabs = createBottomTabNavigator();
 
 function Search() {
-  // Alert.alert('Fix Alert later!');
+  Alert.alert('Search Screen!');
   return <SafeAreaView><Text> Search Screen </Text></SafeAreaView>;
 }
 
 function Call() {
+  Alert.alert('Search Screen!');
   return <SafeAreaView><Text> Call Screen </Text></SafeAreaView>;
 }
 
 function Notification() {
+  Alert.alert('Search Screen!');
   return <SafeAreaView><Text> Notification Screen </Text></SafeAreaView>;
 }
 
 function Account() {
+  Alert.alert('Search Screen!');
   return <SafeAreaView><Text> Account Screen </Text></SafeAreaView>;
 }
 
