@@ -24,6 +24,8 @@ import stethoscope from './icons/category-icons/stethoscope.png';
 import wellness from './icons/category-icons/wellness.png';
 import zoy from './icons/category-icons/zoy.png';
 
+// Diagnostic Icon
+import mobile from './icons/diagnostic-icons/mobile.png'
 
 export {
   bellActive, bellInActive,
@@ -33,5 +35,6 @@ export {
   searchActive, searchInActive,
   cart, mapMarker,
   care, consultation, medicine, microscope, packageIcon,
-  stethoscope, wellness, zoy
+  stethoscope, wellness, zoy,
+  mobile,
 }

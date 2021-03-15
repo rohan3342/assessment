@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import { SafeAreaView, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, ScrollView } from 'react-native';
 import OffersSection from '../components/OffersSection';
 import HomeHeader from '../components/HomeHeader';
 import CategoryService from '../components/CategoryService';
+import DiagnosticScreen from './DiagnosticScreen';
 class Home extends Component {
   render() {
     return (
       <SafeAreaView>
-        <HomeHeader />
-        <OffersSection />
-        <CategoryService />
+        <ScrollView>
+          <HomeHeader />
+          <OffersSection />
+          <CategoryService />
+          <DiagnosticScreen />
+        </ScrollView>
       </SafeAreaView>
     );
   }
