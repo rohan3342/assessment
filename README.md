@@ -18,7 +18,13 @@
 
 > ### Output
 >
-> <div  style="margin: auto; width: 50%;"> <br>
-> <img width= "300px" src="src/assets/Output/output.gif"></img>
-> <br> <br>
-> </div>
+> #### Packages Used:
+>
+> - `@react-native-navigation`
+> - `@react-navigation/bottom-tabs`
+> - [`@react-native-flatlist-slider`](https://github.com/KPS250/React-Native-FlatList-Sliderhttps://github.com/KPS250/React-Native-FlatList-Slider)
+> - Used Custom `<Preview/>` Component. Basically it's a part of `@react-native-flatlist-slider`
+> - <div  style="margin: auto; width: 50%;"> <br>
+>   <img width= "300px" src="src/assets/Output/output.gif"></img>
+>   <br> <br>
+>   </div>
