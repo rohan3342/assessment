@@ -20,17 +20,17 @@ function Search() {
 }
 
 function Call() {
-  Alert.alert('Search Screen!');
+  Alert.alert('Call Screen!');
   return <SafeAreaView><Text> Call Screen </Text></SafeAreaView>;
 }
 
 function Notification() {
-  Alert.alert('Search Screen!');
+  Alert.alert('Notification Screen!');
   return <SafeAreaView><Text> Notification Screen </Text></SafeAreaView>;
 }
 
 function Account() {
-  Alert.alert('Search Screen!');
+  Alert.alert('Account Screen!');
   return <SafeAreaView><Text> Account Screen </Text></SafeAreaView>;
 }
 
