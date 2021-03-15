@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { Logo } from '../assets/images';
 import { mapMarker, cart } from '../assets/icons';
 class HomeHeader extends Component {
@@ -10,14 +10,19 @@ class HomeHeader extends Component {
           <Image source={Logo} style={styles.LogoImg} />
         </View>
         <View style={styles.rightSide}>
-          <Image style={styles.img} source={mapMarker} />
+          <TouchableOpacity>
+            <Image style={styles.img} source={mapMarker} />
+          </TouchableOpacity>
           <View style={styles.line} />
-          <View style={styles.cartContainer}>
-            <View style={styles.cartCountView}>
-              <Text style={styles.cartCount}>0</Text>
+          <TouchableOpacity>
+            <View style={styles.cartContainer}>
+              <View style={styles.cartCountView}>
+                <Text style={styles.cartCount}>0</Text>
+              </View>
+              <Image style={styles.cartIcon} source={cart} />
             </View>
-            <Image style={styles.cartIcon} source={cart} />
-          </View>
+
+          </TouchableOpacity>
         </View>
       </View>
     );
