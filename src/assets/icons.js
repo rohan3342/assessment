@@ -13,11 +13,25 @@ import searchInActive from './icons/bottom-tab-icons/search-inactive.png';
 import cart from './icons/header-icons/cart.png';
 import mapMarker from './icons/header-icons/mapMarker.png';
 
+// Category Icons
+
+import care from './icons/category-icons/care.png';
+import consultation from './icons/category-icons/consultation.png';
+import medicine from './icons/category-icons/medicine.png';
+import microscope from './icons/category-icons/microscope.png';
+import packageIcon from './icons/category-icons/package.png';
+import stethoscope from './icons/category-icons/stethoscope.png';
+import wellness from './icons/category-icons/wellness.png';
+import zoy from './icons/category-icons/zoy.png';
+
+
 export {
   bellActive, bellInActive,
   call,
   homeActive, homeInActive,
   personActive, personInActive,
   searchActive, searchInActive,
-  cart, mapMarker
+  cart, mapMarker,
+  care, consultation, medicine, microscope, packageIcon,
+  stethoscope, wellness, zoy
 }
