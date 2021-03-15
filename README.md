@@ -18,4 +18,7 @@
 
 > ### Output
 >
-> <br>
+> <div  style="margin: auto; width: 50%;"> <br>
+> <img width= "300px" src="src/assets/Output/output.gif"></img>
+> <br> <br>
+> </div>
